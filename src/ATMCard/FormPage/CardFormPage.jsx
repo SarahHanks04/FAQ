@@ -34,7 +34,7 @@ const CardFormPage = () => {
         <div>
           <label>Serial Number</label>
           <input
-            type="text"
+            type="number"
             name="serialNumber"
             onInput={AddDetails}
             className="border rounded px-2 py-1"
@@ -44,18 +44,18 @@ const CardFormPage = () => {
         <div>
           <label>Date</label>
           <input
-            type="text"
+            type="number"
             name="date"
             onInput={AddDetails}
             className="border rounded px-2 py-1"
-            placeholder="MM/YY"
+            placeholder="DD/MM/YY"
           />
         </div>
         <br />
         <div>
           <label>CVC</label>
           <input
-            type="text"
+            type="number"
             name="cvc"
             onInput={AddDetails}
             className="border rounded px-2 py-1"
