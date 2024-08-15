@@ -30,6 +30,7 @@ const CardFormPage = () => {
             className="border rounded px-2 py-1"
           />
         </div>
+        <br />
         <div>
           <label>Serial Number</label>
           <input
@@ -39,6 +40,7 @@ const CardFormPage = () => {
             className="border rounded px-2 py-1"
           />
         </div>
+        <br />
         <div>
           <label>Date</label>
           <input
@@ -49,6 +51,7 @@ const CardFormPage = () => {
             placeholder="MM/YY"
           />
         </div>
+        <br />
         <div>
           <label>CVC</label>
           <input
@@ -58,6 +61,7 @@ const CardFormPage = () => {
             className="border rounded px-2 py-1"
           />
         </div>
+        <br />
         <div className="mt-4">
           <button onClick={SubmitForm}
             type="submit"
