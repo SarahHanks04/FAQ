@@ -12,6 +12,11 @@ const CardFormPage = () => {
     }));
   };
 
+  const SubmitForm = (e) => {
+    e.preventDefault();
+    alert("Card Details Submitted!");
+  };
+
   return (
     <div>
     <h1 className=" m-6 font-bold text-3xl">SARAH'S UBA ATM CARD</h1>
@@ -54,7 +59,7 @@ const CardFormPage = () => {
           />
         </div>
         <div className="mt-4">
-          <button
+          <button onClick={SubmitForm}
             type="submit"
             className="bg-red-500 text-white px-4 py-2 rounded hover:bg-yellow-700"
           >
