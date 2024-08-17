@@ -60,7 +60,7 @@ const CardFormPage = () => {
             onInput={AddDetails}
             className="border rounded px-2 py-1"
           />
-        </div >
+        </div>
         <br />
         <div className="mt-4">
           <button onClick={SubmitForm}
