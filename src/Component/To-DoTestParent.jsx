@@ -63,7 +63,7 @@ const TodoParent = () => {
           </button>
         <div className="w-full mb-4 flex justify-between">
           <h2 className="text-xl">Total</h2>
-          <p>#{total}</p>
+          <p>&#8358;{total}</p>
         </div>
         <div className="w-full">
           {groceries.map((item) => (

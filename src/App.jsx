@@ -13,17 +13,17 @@ function App() {
   return (
     <>
       <div>
-        {/* <TodoParent /> */}
+        <TodoParent />
         {/* UseContext */}
         {/* <MainContainer /> */}
 
         
 
-        <CardContextProvider>
+        {/* <CardContextProvider>
           <CardFormPage />
           <CardDetails />
           <BackPageDIsplay />
-        </CardContextProvider>
+        </CardContextProvider> */}
       </div>
     </>
   )
