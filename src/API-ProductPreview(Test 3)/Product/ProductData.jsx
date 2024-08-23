@@ -18,31 +18,35 @@ const ProductData = () => {
 
   function Next() {
     setProductId((prev) => prev + 1);
-  } 
-  function Previous(){
+  }
+  function Previous() {
     setProductId((prev) => prev - 1);
-  } 
+  }
 
   return (
-    <main>
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 border-black border-[1px]">
+
       <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg max-w-sm mx-auto">
+
         {loading ? (
           <div className="text-center">
             <p className="text-gray-500 animate-pulse">Loading...</p>
           </div>
         ) : (
           <div>
-            <h1 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h1 className="text-2xl font-semibold text-gray-800 mb-14">
               {product.title}
             </h1>
-            <p className="text-gray-600 mb-6 text-center">
+            <p className="text-gray-600 mb-6">
+              <span className="text-gray-600 font-semibold text-2xl">Description: </span>
               {product.description}
             </p>
-            <p className="text-gray-600 mb-6 text-center  font-semibold text-2xl">
-              ${product.price}
+            <p className="text-gray-600 mb-6  font-semibold text-2xl">
+              Price: ${product.price}
             </p>
           </div>
         )}
+        
       </div>
 
       <div className="flex justify-between w-full max-w-sm mt-8">

@@ -33,9 +33,7 @@ function App() {
 
             {/* {TEXT 3} */}
             <ProductProvider>
-              <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10">
                 <ProductData />
-              </main>
             </ProductProvider>
       </div>
     </>
