@@ -26,7 +26,7 @@ const ProductData = () => {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 ">
 
-      <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg max-w-sm mx-auto border-[1px] border-black">
+      <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg max-w-[700px] mx-auto border-[1px] border-black">
 
         {loading ? (
           <div className="text-center">
@@ -34,13 +34,13 @@ const ProductData = () => {
           </div>
         ) : (
           <div>
-            <h1 className="text-2xl font-semibold text-gray-800 mb-14">
+            <h1 className="text-2xl text-center font-semibold text-gray-800 mb-4">
               {product.title}
             </h1>
 
-            <img src={product.thumbnail} alt={product.title} className="w-full h-48 object-cover mb-10" />
+            <img src={product.thumbnail} alt={product.title} width={200} height={100} className=" object-cover text-center mb-10" />
 
-            <p className="text-gray-600 mb-6  font-semibold text-2xl">
+            <p className="text-gray-600 mb-4  font-semibold text-2xl">
               Price: ${product.price}
             </p>
 
@@ -53,11 +53,11 @@ const ProductData = () => {
 
       </div>
 
-      <div className="flex justify-between w-full max-w-sm mt-8">
+      <div className="flex justify-between w-full max-w-sm mt-4">
         <ProductButton
           onClick={Previous}
           buttonText={"Previous"}
-          className=" border-2 bg-gray-500 text-white font-medium py-2 px-4 rounded shadow-md hover:bg-red-300 transition duration-300"
+          className=" border-2 bg-gray-500 text-white font-medium py-2 px-4 mr-[5rem] rounded shadow-md hover:bg-red-300 transition duration-300"
         />
         <ProductButton
           onClick={Next}
