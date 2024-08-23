@@ -38,7 +38,7 @@ const ProductData = () => {
               {product.title}
             </h1>
 
-            <img src={product.thumbnail} alt={product.title} width={200} height={100} className="object-cover text-center mb-4" />
+            <img src={product.thumbnail} alt={product.title} width={200} height={100} className="object-cover mb-4 mx-auto" />
 
             <p className="text-gray-600 mb-4  font-semibold text-2xl">
               Price: ${product.price}
