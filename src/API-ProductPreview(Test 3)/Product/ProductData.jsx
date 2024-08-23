@@ -26,7 +26,7 @@ const ProductData = () => {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 ">
 
-      <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg max-w-sm mx-auto">
+      <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg max-w-sm mx-auto border-[1px] border-black">
 
         {loading ? (
           <div className="text-center">
@@ -37,12 +37,16 @@ const ProductData = () => {
             <h1 className="text-2xl font-semibold text-gray-800 mb-14">
               {product.title}
             </h1>
+
+            <img src={product.thumbnail} alt={product.title} className="w-full h-48 object-cover mb-10" />
+
+            <p className="text-gray-600 mb-6  font-semibold text-2xl">
+              Price: ${product.price}
+            </p>
+
             <p className="text-gray-600 mb-6">
               <span className="text-gray-600 font-semibold text-2xl">Description: </span>
               {product.description}
-            </p>
-            <p className="text-gray-600 mb-6  font-semibold text-2xl">
-              Price: ${product.price}
             </p>
           </div>
         )}
