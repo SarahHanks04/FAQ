@@ -24,7 +24,7 @@ const ProductData = () => {
   }
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 border-black border-[1px]">
+    <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 py-10 ">
 
       <div className="flex flex-col items-center bg-white p-6 shadow-lg rounded-lg max-w-sm mx-auto">
 
@@ -46,7 +46,7 @@ const ProductData = () => {
             </p>
           </div>
         )}
-        
+
       </div>
 
       <div className="flex justify-between w-full max-w-sm mt-8">
