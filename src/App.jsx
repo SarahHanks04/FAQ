@@ -8,6 +8,8 @@ import MainContainer from './Component/MainContainer/App';
 import TodoParent from './Component/To-DoTestParent';
 import ProductProvider from './API-ProductPreview(Test 3)/Context/ProductProvider';
 import ProductData from './API-ProductPreview(Test 3)/Product/ProductData';
+import Quote from './Component/RandomQuote/Quote';
+import AdviceBox from './Component/RandomQuote/AdviceBox';
 
 
 function App() {
@@ -32,9 +34,14 @@ function App() {
         </CardContextProvider> */}
 
             {/* {TEXT 3} */}
-            <ProductProvider>
+            {/* <ProductProvider>
                 <ProductData />
-            </ProductProvider>
+            </ProductProvider> */}
+
+            {/* {TEST 4} */}
+            <AdviceBox />
+
+      
       </div>
     </>
   )
