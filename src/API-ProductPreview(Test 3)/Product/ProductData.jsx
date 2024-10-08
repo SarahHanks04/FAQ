@@ -1,17 +1,32 @@
 import React, { useContext, useEffect } from "react";
 import { ProductContext } from "../Context/ProductProvider";
 import ProductButton from "../Button/ProductButton";
+import axios from "axios";
 
 const ProductData = () => {
   const { product, setProduct, loading, setLoading, productId, setProductId } =
     useContext(ProductContext);
 
+  // useEffect(() => {
+  //   setLoading(true);
+  //   fetch(`https://dummyjson.com/products/${productId}`)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setProduct(data);
+  //       setLoading(false);
+  //     });
+  // }, [productId]);
+
+  // API USING AXIOS
   useEffect(() => {
     setLoading(true);
-    fetch(`https://dummyjson.com/products/${productId}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setProduct(data);
+    axios.get(`https://dummyjson.com/products/${productId}`)
+      .then((response) => {
+        setProduct(response.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
         setLoading(false);
       });
   }, [productId]);
@@ -67,7 +82,6 @@ const ProductData = () => {
                 className="border-2 bg-gray-500 text-white font-medium py-2 px-4 rounded shadow-md hover:bg-red-300 transition duration-300"
               />
             </div>
-
           </div>
         )}
       </div>
