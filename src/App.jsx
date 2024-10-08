@@ -34,12 +34,12 @@ function App() {
         </CardContextProvider> */}
 
             {/* {TEXT 3} */}
-            <ProductProvider>
+            {/* <ProductProvider>
                 <ProductData />
-            </ProductProvider>
+            </ProductProvider> */}
 
             {/* {TEST 4} */}
-            {/* <AdviceBox /> */}
+            <AdviceBox />
 
       
       </div>
